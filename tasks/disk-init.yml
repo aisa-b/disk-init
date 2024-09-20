@@ -46,6 +46,18 @@
   tags:
     - disk_init
 
+- name: Remove existing volume groups
+  community.general.lvg:
+    vg: vg00
+    state: absent
+    force: yes
+
+- name: Remove existing volume groups
+  community.general.lvg:
+    vg: vg00
+    state: absent
+    force: yes
+
 # TODO: set_fact -> figure out all pvs in a volume-group (new & old)
 # at this point all disks are configured that belong to a volume group and may be assigned
 # - pvs displays available disks (Ist Zustand)
