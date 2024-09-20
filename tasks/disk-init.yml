@@ -46,15 +46,15 @@
   tags:
     - disk_init
 
-- name: Remove existing volume groups
+- name: Remove existing volume group vg00
   community.general.lvg:
     vg: vg00
     state: absent
     force: yes
 
-- name: Remove existing volume groups
+- name: Remove existing volume group vg01
   community.general.lvg:
-    vg: vg00
+    vg: vg01
     state: absent
     force: yes
 
